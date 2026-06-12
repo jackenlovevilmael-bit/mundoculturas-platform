@@ -313,7 +313,7 @@ export const countries: Country[] = [
       "Italia es el mayor productor de vino del mundo."
     ],
     curiositiesEn: [
-      "Italy has more UNESCO World Heritage sites than any other country.",
+      "Italy as more UNESCO World Heritage sites than any other country.",
       "The Colosseum in Rome is one of the Seven Wonders of the Modern World.",
       "Italy is the world's largest wine producer."
     ],
@@ -555,3 +555,73 @@ export const countries: Country[] = [
   },
   {
     slug: "brasil",
+    name: "Brasil",
+    nameEn: "Brazil",
+    capital: "Brasilia",
+    capitalEn: "Brasília",
+    flag: "🇧🇷",
+    currency: "Real Brasileño (BRL)",
+    currencyEn: "Brazilian Real (BRL)",
+    language: "Portugués",
+    languageEn: "Portuguese",
+    population: "216 millones",
+    continent: "América",
+    lat: -15.8267,
+    lng: -47.9218,
+    color: "#f59e0b",
+    shortDesc: "El país de la samba, el fútbol y la Amazonia, el pulmón verde del planeta.",
+    shortDescEn: "The country of samba, football, and the Amazon, the green lung of the planet.",
+    history: "Brasil es el único país de América Latina colonizado por Portugal. Descubierto en 1500, se convirtió en el mayor productor de azúcar, oro y café del mundo. La independencia en 1822 y la proclamación de la República en 1889 marcaron its path to modern power.",
+    historyEn: "Brazil is the only Latin American country colonized by Portugal. Discovered in 1500, it became the world's largest producer of sugar, gold, and coffee. Independence in 1822 and the proclamation of the Republic in 1889 marked its path to modern power.",
+    culture: "Brasil irradia alegría y diversidad. La samba y el carnaval de Río son legendarios. La bossa nova, el fútbol (5 veces campeón del mundo), la capoeira y la hospitalidad del pueblo brasileño lo convierten en uno de los países más vibrantes culturalmente.",
+    cultureEn: "Brazil radiates joy and diversity. Samba and Rio's carnival are legendary. Bossa nova, football (5-time world champion), capoeira, and the Brazilian people's hospitality make it one of the most culturally vibrant countries.",
+    curiosities: [
+      "Brasil es el país con mayor número de católicos del mundo.",
+      "La Amazonia brasileña representa el 60% de la selva tropical del planeta.",
+      "Brasil ha ganado 5 Copas del Mundo de fútbol, más que cualquier otro país."
+    ],
+    curiositiesEn: [
+      "Brazil is the country with the largest number of Catholics in the world.",
+      "The Brazilian Amazon represents 60% of the planet's tropical rainforest.",
+      "Brazil has won 5 FIFA World Cups, more than any other country."
+    ],
+    gastronomy: [
+      {
+        name: "Feijoada",
+        description: "El plato nacional. Guiso de frijoles negros con carnes de cerdo y res, servido con arroz, couve y farofa.",
+        ingredients: ["Frijoles negros", "Carnes de cerdo y res", "Arroz", "Couve (acelga)", "Farofa (harina de yuca)"],
+        image: "https://picsum.photos/id/292/800/600"
+      },
+      {
+        name: "Picanha",
+        description: "El corte de carne más apreciado en Brasil. Asado a la parrilla con sal gruesa, jugoso y lleno de sabor.",
+        ingredients: ["Picanha (alcatra)", "Sal gruesa", "Limón", "Farofa"],
+        image: "https://picsum.photos/id/312/800/600"
+      }
+    ],
+    tourism: [
+      {
+        name: "Cristo Redentor",
+        description: "El icono de Río de Janeiro. Estatua de 38 metros que domina la ciudad desde el Corcovado.",
+        image: "https://picsum.photos/id/1016/800/600",
+        type: "Icono Mundial"
+      },
+      {
+        name: "Amazonia",
+        description: "La selva tropical más grande del mundo. Experiencia única de biodiversidad y comunidades indígenas.",
+        image: "https://picsum.photos/id/160/800/600",
+        type: "Naturaleza Extrema"
+      }
+    ],
+    gallery: [
+      "https://picsum.photos/id/1005/1200/800",
+      "https://picsum.photos/id/133/1200/800",
+      "https://picsum.photos/id/201/1200/800",
+      "https://picsum.photos/id/160/1200/800"
+    ]
+  }
+];
+
+export const getCountryBySlug = (slug: string): Country | undefined => {
+  return countries.find(c => c.slug === slug);
+};
