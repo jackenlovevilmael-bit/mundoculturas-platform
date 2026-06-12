@@ -4,7 +4,6 @@ import React, { useRef, useState, useMemo, Suspense } from 'react';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import { OrbitControls, Stars, Html } from '@react-three/drei';
 import * as THREE from 'three';
-import { motion } from 'framer-motion';
 
 // Datos de países con coordenadas (lat, lng)
 export interface CountryPin {
@@ -248,7 +247,7 @@ function CameraController() {
       zoomSpeed={0.8}
       autoRotate={true}
       autoRotateSpeed={0.08}
-    />;
+    />
   );
 }
 
