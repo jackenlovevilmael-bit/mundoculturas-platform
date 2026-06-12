@@ -313,7 +313,7 @@ export const countries: Country[] = [
       "Italia es el mayor productor de vino del mundo."
     ],
     curiositiesEn: [
-      "Italy as more UNESCO World Heritage sites than any other country.",
+      "Italy has more UNESCO World Heritage sites than any other country.",
       "The Colosseum in Rome is one of the Seven Wonders of the Modern World.",
       "Italy is the world's largest wine producer."
     ],
@@ -573,7 +573,7 @@ export const countries: Country[] = [
     shortDescEn: "The country of samba, football, and the Amazon, the green lung of the planet.",
     history: "Brasil es el único país de América Latina colonizado por Portugal. Descubierto en 1500, se convirtió en el mayor productor de azúcar, oro y café del mundo. La independencia en 1822 y la proclamación de la República en 1889 marcaron its path to modern power.",
     historyEn: "Brazil is the only Latin American country colonized by Portugal. Discovered in 1500, it became the world's largest producer of sugar, gold, and coffee. Independence in 1822 and the proclamation of the Republic in 1889 marked its path to modern power.",
-    culture: "Brasil irradia alegría y diversidad. La samba y el carnaval de Río son legendarios. La bossa nova, el fútbol (5 veces campeón del mundo), la capoeira y la hospitalidad del pueblo brasileño lo convierten en uno de los países más vibrantes culturalmente.",
+    culture: "Brasil irradia alegría y diversidad. La samba y el carnaval de Río son legendarios. La bossa nova, el fútbol (5 times world champion), la capoeira y la hospitalidad del pueblo brasileño lo convierten en uno de los países más vibrantes culturalmente.",
     cultureEn: "Brazil radiates joy and diversity. Samba and Rio's carnival are legendary. Bossa nova, football (5-time world champion), capoeira, and the Brazilian people's hospitality make it one of the most culturally vibrant countries.",
     curiosities: [
       "Brasil es el país con mayor número de católicos del mundo.",
@@ -594,7 +594,7 @@ export const countries: Country[] = [
       },
       {
         name: "Picanha",
-        description: "El corte de carne más apreciado en Brasil. Asado a la parrilla con sal gruesa, jugoso y lleno de sabor.",
+        description: "El corte de carne más apreciado in Brasil. Asado a la parrilla con sal gruesa, jugoso y lleno de sabor.",
         ingredients: ["Picanha (alcatra)", "Sal gruesa", "Limón", "Farofa"],
         image: "https://picsum.photos/id/312/800/600"
       }
