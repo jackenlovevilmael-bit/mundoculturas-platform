@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Inter, Playfair_Display } from "next/font/google";
+import { Geist, Geist_Mono, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import { Toaster } from "sonner";
@@ -27,8 +27,10 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   title: "MundoCulturas | Explora las Culturas del Mundo",
   description: "Plataforma premium interactiva para descubrir culturas, historia, gastronomía y paisajes de todos los países del mundo. Globo 3D, juegos educativos y experiencias inmersivas.",
-  icons: {
-    icon: "/globe.svg",
+  openGraph: {
+    title: "MundoCulturas - El mundo en tus manos",
+    description: "Viaja sin salir de casa. Explora culturas con un globo 3D interactivo de calidad National Geographic.",
+    images: [{ url: "/og-image.jpg" }],
   },
 };
 
