@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+:root {
+  --font-geist-sans: var(--font-geist-sans);
+  --font-geist-mono: var(--font-geist-mono);
+  --font-playfair: var(--font-playfair);
+}
+
+body {
+  font-family: var(--font-geist-sans);
+}
+
+/* Premium dark theme */
+html {
+  color-scheme: dark;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255,255,255,0.15);
+  border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255,255,255,0.3);
+}
+
+/* Hide scrollbar for tabs */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Glassmorphism & premium effects */
+.glass {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Button micro interactions */
+button, a {
+  transition: transform 0.1s cubic-bezier(0.23, 1, 0.32, 1), 
+              box-shadow 0.2s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+button:active, a:active {
+  transform: scale(0.985);
+}
+
+/* 3D Canvas container polish */
+canvas {
+  display: block;
+}
+
+/* Image zoom on hover for cards */
+.group:hover img {
+  transform: scale(1.08);
+}
+
+/* Typography polish */
+h1, h2, h3 {
+  font-feature-settings: "tnum";
+}
+
+/* Modal and overlay polish */
+.fixed {
+  animation: fadeInModal 0.2s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@keyframes fadeInModal {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .text-7xl { font-size: 3.2rem; line-height: 1; }
+  .text-6xl { font-size: 2.8rem; }
+}
